@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SITECH - Etudiant</title>
+    <link rel="stylesheet" href="pageEtudiant.css">
+  </head>
+  <body>
+    <div class="container">
+      <main>
+        <div class="head">
+          <div class="image"><img src="/images/logo.png" alt=""></div>
+          <div>
+            <h2><strong><span style="color: rgb(0, 68, 255);">S</span><span style="color: rgb(255, 115, 0);">I</span>TECH</strong></h2>
+            <h3>SCHOOL INTERACTION OF TECHNOLOGY</h3>
+            <p>
+              Téléphone : (+509) 47112618 / 46304732 <br>
+              Adresse : Route de la saline, Jacmel Haiti <br>
+              Web : www.sitechapp.blogspot.com <br>
+              Email : sitech.ht@gmail.com
+            </p>
+            <hr />
+           
+          </div>
+        </div><hr>
+        <h4>Resultats des Etudiants</h4>
+        <div class="form">
+          RollNo: <input type="password" name="code" id="code" /> <br /><br />
+        </div>
+        <div class="buttons">
+          <button id="read">Read</button>
+        </div>
+        <div class="infosEtudiant">
+          <ul class="ip">
+            <h3>Information personnelle</h3>
+            <li><strong>Code</strong> <span class="sep"></span><span id="codeE"></span></li>
+            <li><strong>Nom</strong> <span class="sep"></span><span id="np"></span></li>
+            <li><strong>Code Etudian</strong> <span class="sep"></span><span id="sexe"></span></li>
+            <li><strong>Code Etudian</strong> <span class="sep"></span><span id="adresse"></span></li>
+            <button class="print" onclick="window.print()">Imprimer</button>
+          </ul>
+  
+          <ul class="ne">
+            <h3>Notes Etudiant</h3>
+            <li><strong>Ang Pratique <i>/50pts</i></strong><span class="sep"></span><input type="number" id="ap" value="" disabled>Points</li>
+            <li><strong>Ang Thérorie <i>/50pts</i></strong> <span class="sep"></span><input type="number" id="at" value="" disabled>Points</li>
+            <li><strong>Inf.B Pratique <i>/50pts</i></strong><span class="sep"></span><input type="number" id="ip" value="" disabled>Points</li>
+            <li><strong>Inf.B Théorie <i>/50pts</i></strong><span class="sep"></span> <input type="number" id="it" value="" disabled>Points</li>
+
+            
+            <div class="result">
+              <ul>
+                <li>Total <span id="total"></span></li>
+                <li>Moyenne <span id="moyenne"></span></li>
+              </ul>
+            </div>
+          </ul>
+        </div>
+        <div class="signature">
+          <hr>
+          <p>signature</p>
+        </div>
+      </main>
+      <aside>
+
+      </aside>
+
+      
+    </div>
+    <script src="https://www.gstatic.com/firebasejs/8.4.2/firebase.js"></script>
+
+    <script src="./fireConfig.js" defer></script>
+    <script src="pagesEtudiant.js" defer></script>
+
+    <script>
+     
+    </script>
+
+  </body>
+</html>
